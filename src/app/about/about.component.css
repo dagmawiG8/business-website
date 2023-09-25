@@ -1,0 +1,290 @@
+.container-fluid {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1em;
+}
+
+.front-row{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5em;
+}
+
+.front-col {
+    vertical-align: bottom;
+    color: #0b91b8;
+    font-family: 'Poppins', 'Sans serif';
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.headline{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.headline-4 {
+    font-family: 'Poppins', serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.content-headline {
+    padding-top: 1em;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #0b91b8;
+}
+
+#welcome-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sans' Serif;
+    line-height: 1.5;
+    text-align: justify;
+    color: grey;
+}
+
+.learn-more {
+    background-color: #0b91b8;
+    height: 3em;
+    width: 12em;
+    margin-top: 1.5em;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    color: #0b91b8;
+    border: 1px solid #0b91b8;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+
+.learn-more:hover, .learn-more:active {
+    background-color: #0b91b8;
+    color: white;
+    border: none;
+}
+
+.btn-rounded {
+    margin-top: 1.5em;
+    width: 11em;
+    height: 3.5em;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid white;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+  
+.btn-rounded:hover {
+    color: #0b91b8;
+    background: white;
+    border: 2px solid #0b91b8;
+}
+
+.contact-section {
+    padding-top: 5em;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 50vh;
+    background-color: #0b91b8;
+}
+
+.content-section {
+    padding-bottom: 5em;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    padding-right: 7em;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sans' Serif;
+    line-height: 1.5;
+    color: grey;
+}
+
+.vision-section {
+    padding: 3em;
+    padding-left: 8em;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 100%;
+}
+
+.content-body {
+    padding-left: 8em;
+    padding-right: 4em;
+}
+
+.vision-cards {
+    height: 20em;
+    border: none;
+}
+
+.line-top {
+    border: none;
+    height: 10px;
+    background-color: #0b91b8;
+    width: 12%;
+    opacity: 1;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-text {
+    padding-top: 1em;
+    padding-right: 0.8em;
+    text-align: justify;
+    color: grey;
+}
+
+li.borderless {
+    border: 0 none;
+    padding: 2px;
+}
+
+.list-group-item {
+    justify-content: left;
+}
+
+.fa-caret-right {
+    color: #0b91b8;
+}
+
+.list-group-item-name {
+    padding-left: 1em;
+    color: grey;
+}
+
+.team-section {
+    padding-bottom: 5em;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .headline{
+        font-size: 1.9em;
+        font-family: 'sans serif';
+    }
+
+    .headline-4 {
+        font-size: 20px;
+    }
+
+    #welcome-text {
+        font-size: 18px;
+        padding-bottom: 0.5em;
+    }
+
+    .front-row {
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .front-col {
+        width: 100%;
+        height: 100%;
+        margin-left: -6em;
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        /* border: 2px solid red; */
+    }
+
+    .front-page-image {
+        display: none;
+    }
+
+    .underline {
+        width: 15%;
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-section {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        width: 100%;
+        height: 100%;
+    }
+
+    .vision-section {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+    }
+
+    .team-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-section, .text-content, .content-headline, .content-body {
+        width: 100%;
+        height: 100%;
+        padding: 0.6em;
+    }
+
+    .content-headline {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .second-headline {
+        padding-top: 0.5em;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .row-vision {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-vision{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .card-img-service {
+        width: 100%;
+        height: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .vision-cards {
+        width: 100%;
+        height: 100%;
+    }
+}

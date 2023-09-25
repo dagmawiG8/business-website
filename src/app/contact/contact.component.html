@@ -1,0 +1,125 @@
+<!-- Contact Us-->
+<section id="go-to-up"></section>
+
+<section class="map-location">
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d641.8918375843946!2d38.76168662865373!3d9.031246086203732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f011a7657cb%3A0xd2ba43297b61b3e3!2sConvergence%20IT%20Solutions!5e0!3m2!1sen!2snl!4v1680010276831!5m2!1sen!2snl" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+<section class="contact-section">
+    <div class="row contact-row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 contact-info">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item borderless">
+              <h3 class="contact-headline"> Contact Information </h3>
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-sharp fa-solid fa-phone-volume"></i>
+              <span class="list-group-item-name"> +251920343154 </span>
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-sharp fa-solid fa-envelope"></i> 
+              <span class="list-group-item-name"> sales@convergencesolutons.com </span>
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-light fa-solid fa-globe"></i>
+              <span class="list-group-item-name"> www.convergencesolutons.com </span>
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-solid fa-location-dot"></i> 
+              <span class="list-group-item-name">  Ikhlas Building 2nd Floor Office No.230, Arat kilo down from Tourist Hotel </span>
+            </li>
+          </ul>
+
+          <div class="col col-sm-* col-md-* col-lg-*">
+            <div class="hr-info"> <hr> </div>
+
+            <div class="mb-4 social-buttons">
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+               <i class="fa-brands fa-google"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              <a class="btn btn-outline-light btn-floating m-1" href="#" role="button">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2"></div>
+ 
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 contact-form">
+            <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+                <div class="form-group">
+                    <h3 class="contact-headline"> Leave us a message </h3>
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name-controller" placeholder="Full Name"
+                  formControlName="name" [ngClass]="{ 'is-invalid': (contactForm.controls['name'].dirty || contactForm.controls['name'].touched) && this.contactForm.controls['name'].errors }">
+
+                  <div class="invalid-feedback" *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)">
+                    <div *ngIf="contactForm.controls['name'].errors?.['required']">
+                      <strong> A required field </strong>
+                      <span>*</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email-controller" placeholder="Email"
+                    formControlName="email" [ngClass]="{ 'is-invalid': (contactForm.controls['email'].dirty || contactForm.controls['email'].touched) && this.contactForm.controls['email'].errors }">
+
+                    <div class="invalid-feedback" *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)">
+                      <div *ngIf="contactForm.controls['email'].errors?.['required']"> <strong> A required field </strong> <span>*</span> </div>
+                      <div *ngIf="contactForm.controls['email'].errors?.['email']"> <strong>Email must be a valid email address</strong> </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject-controller" placeholder="Subject"
+                    formControlName="subject" [ngClass]="{ 'is-invalid': (contactForm.controls['subject'].dirty || contactForm.controls['subject'].touched) && this.contactForm.controls['subject'].errors }">
+
+                    <div class="invalid-feedback" *ngIf="contactForm.controls['subject'].invalid && (contactForm.controls['subject'].dirty || contactForm.controls['subject'].touched)">
+                      <div *ngIf="this.contactForm.controls['subject'].errors?.['required']"> <strong> A required field </strong> <span>*</span> </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control textarea" rows="7" id="message-controller" placeholder="Your message..."
+                  formControlName="message" [ngClass]="{ 'is-invalid': (contactForm.controls['message'].dirty || contactForm.controls['message'].touched) && this.contactForm.controls['message'].errors }"></textarea>
+
+                  <div class="invalid-feedback" *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)">
+                    <div *ngIf="this.contactForm.controls['message'].errors?.['required']"> <strong> A required field </strong> <span>*</span> </div>
+                  </div>
+                </div>
+
+                <div class="form-group submit">
+                    <button type="button" class="btn btn-primary submit-btn" [swal]="confirmation" [disabled]="disabled"> 
+                      <a (click)="onSubmit()"> Submit </a>
+                    </button>
+                </div>
+
+                <swal
+                    #confirmation
+                    title= {{notice}}
+                    text= {{message}}
+                    [icon]= resultIcon
+                    confirmButtonColor= {{confirmButtonColor}}
+                    [showCancelButton]="false"> 
+                </swal>
+
+              </form>
+        </div>
+      </div>
+</section>

@@ -1,0 +1,237 @@
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+
+<nav class="navbar navbar-expand-lg" role="navigation" scroll="onScroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <img src="assets/convergence-removebg.png" alt="logo" width="80" height="40" class="d-inline-block align-top">
+      </a>
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false"
+        aria-controls="navbarNav" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> Solutions </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/enterprise" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Enterprise Solutions </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/security" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Security Solutions </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/facilities" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Smart Facility </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/software" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Software Solutions </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/data-center" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Data Center Facilities </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/cloud" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Cloud Solutions </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> Services </a>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a class="nav-link sub-link" routerLink="/consultants" routerLinkActive="active" ariaCurrentWhenActive="page">
+                IT Consulting </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sub-link" routerLink="/trainings" routerLinkActive="active" ariaCurrentWhenActive="page">
+                Trainings </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Us</a>
+        </li>
+        <li class="nav-item">          
+          <div class="btn-group dropstart">
+            <div class="dropdown">
+              <i class="fa-solid fa-magnifying-glass" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"></i>
+              <form class="dropdown-menu searchBox">
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="searchField" placeholder="Find your search...">
+                </div> 
+              </form>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white footer">
+  <div class="container p-4">
+    <div class="mb-4 text-center">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/convergenceitsolutions/" role="button"
+        target="_blank"><i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/convergence7_IT/" role="button"
+        target="_blank"><i class="fa-brands fa-twitter"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
+        target="_blank"><i class="fa-brands fa-instagram"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"
+        target="_blank"><i class="fa-brands fa-linkedin-in"></i
+      ></a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Convergenceitsolutions/" role="button"
+        target="_blank"><i class="fa-brands fa-github"></i
+      ></a>
+  </div>
+  <hr class="underline"/>
+
+
+  <!-- Section: Text -->
+  <div class="mb-1 text-center motto">
+    <p>
+      We support you in making your vision a reality and make your digital 
+      transformation the foundation of your growth. </p>
+  </div>
+
+
+    <!-- Section: Links -->
+    <section class="mb-4">
+      <div class="row footer-tab">
+
+        <!--Grid column-->
+        <div class="col col-sm-4 col-md-4 col-lg-4 footer-col">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item borderless">
+              <h6 class="text-capitalize"> Contact </h6>
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-sharp fa-solid fa-phone-volume"></i>
+              +251920343154
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-solid fa-envelope"></i>
+              sales@convergencesolutons.com
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-light fa-solid fa-globe"></i>
+              www.convergencesolutons.com
+            </li>
+            <li class="list-group-item borderless"> <i class="fa-solid fa-location-dot"></i> 
+              Ikhlas Building 2nd Floor, Arat kilo 
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col col-sm-4 col-md-4 col-lg-4 footer-col">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item borderless">
+              <h6 class="text-capitalize"> Solutions </h6>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-database"></i> 
+                <a class="footer-link" routerLink="/data-center" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="onClick('go-to-up')"> Data Center Facility </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-code"></i> 
+                <a class="footer-link" routerLink="/software" routerLinkActive="active" ariaCurrentWhenActive="page"
+                (click)="onClick('go-to-up')"> Software Solutions </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-shield"></i> 
+              <a class="footer-link" routerLink="/security" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')"> Security </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-cloud"></i> 
+              <a class="footer-link" routerLink="/cloud" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')"> Cloud managed services </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col col-sm-2 col-md-2 col-lg-2 footer-col">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item borderless">
+              <h6 class="text-capitalize"> Quick Links </h6>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-circle-info"></i> 
+              <a class="footer-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')">About </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-screwdriver-wrench"></i> 
+              <a class="footer-link" routerLink="/consultants" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')"> Consultation </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-code-branch"></i> 
+              <a class="footer-link" routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')"> Projects </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-user-astronaut"></i> 
+              <a class="footer-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page"
+              (click)="onClick('go-to-up')"> Contact </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Grid column-->
+        <div class="col col-sm-2 col-md-2 col-lg-2 footer-col">
+          <ul class="list-group list-unstyled">
+            <li class="list-group-item borderless">
+              <h6 class="text-capitalize"> Resources </h6>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-tag"></i>
+              <a class="footer-link" target="_blank" href="http://convergencesolutons.com/files/Convergence_Company_Profile.pdf" download>
+                Company Profile </a>
+            </li>
+            <li class="list-group-item borderless"> 
+              <i class="fa-solid fa-book-open-reader"></i> Training Center </li>
+            <li class="list-group-item borderless">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Copyright -->
+  <div class="text-center copyright">
+    <hr class="underline-copyright"/>
+    © 2022 <a class="text-white" href="https://convergencesolutons.com/"> Convergence IT Solutions</a>
+  </div>
+
+</footer>

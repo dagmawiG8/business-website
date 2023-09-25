@@ -1,0 +1,214 @@
+.container-fluid {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.front-row{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5em;
+}
+
+.front-col {
+    vertical-align: bottom;
+    color: #0b91b8;
+    font-family: 'Poppins', 'Sans serif';
+    font-size: 14px;
+    margin-top: 3em;
+}
+
+.headline{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#welcome-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sans' Serif;
+    line-height: 1.5;
+    text-align: justify;
+    color: grey;
+}
+
+#solution-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Sans' Serif;
+    text-align: left;
+    color: grey;
+}
+
+.front-page-image {
+    margin-left: 3em;
+}
+
+.learn-more {
+    background-color: #0b91b8;
+    height: 3em;
+    width: 12em;
+    margin-top: 1.5em;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    color: #0b91b8;
+    border: 1px solid #0b91b8;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+
+.learn-more:hover, .learn-more:active {
+    background-color: #0b91b8;
+    color: white;
+    border: none;
+}
+
+.solutions-card-img {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2em;
+    border: none;
+}
+
+.solutions-card-text {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 6em;
+    border: none;
+}
+
+.facility-solutions-row {
+    padding-top: 2em;
+}
+
+.btn-rounded {
+    margin-top: 1.5em;
+    width: 11em;
+    height: 3.5em;
+    font-family: 'Poppins', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 1px solid white;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-rounded:hover {
+    color: #0b91b8;
+    background: white;
+    border: 1px solid #0b91b8;
+}
+
+.headline-4 {
+    font-family: 'Poppins', serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.contact-section {
+    padding-top: 5em;
+    margin-bottom: 3em;
+    width: 100%;
+    height: 50vh;
+    background-color: #0b91b8;
+}
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .headline{
+        font-size: 1.9em;
+        font-family: 'sans serif';
+    }
+
+    .headline-4 {
+        font-size: 20px;
+    }
+
+    #welcome-text {
+        font-size: 15px;
+        padding-bottom: 0.5em;
+    }
+
+    .front-row {
+        padding-top: 2.5em;
+        padding-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .front-col {
+        width: 100%;
+        height: 100%;
+        margin-left: -6em;
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        /* border: 2px solid red; */
+    }
+
+    .front-page-image {
+        display: none;
+    }
+
+    .underline {
+        width: 15%;
+    }
+
+    .contact-section {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-headline {
+        padding-top: 0.5em;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        padding-bottom: 2em;
+    }
+
+    .facility-solutions-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-even {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card-img-service, .enterprise-col {
+        width: 100%;
+        height: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .solutions-card-text {
+        text-align: center;
+    }
+
+    #solution-text {
+        text-align: justify;
+        padding: 0.5em;
+        font-size: 16px;
+    }
+}

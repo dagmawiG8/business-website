@@ -1,0 +1,201 @@
+
+.fixed {
+    position: fixed !important;
+    width: 100%;
+    transition: 0.2s linear;
+    top: 0px;
+    background-color: white;
+    border-bottom: 0.001em solid rgb(218, 218, 218);
+    z-index: 1;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+img {
+    margin-left: 6em;
+    margin-top: 0.2em;
+}
+
+.navbar-nav li:hover a{
+    color: #0b91b8;
+}
+
+.navbar-nav {
+    padding: 0.5em 5em;
+    margin-top: 0.5em;
+}
+
+.nav-link {
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ---- */
+.dropdown-menu li:hover a{
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    margin-right: 50em;
+}
+/* ---- */
+
+.searchBox {
+    width: 200px;
+    border: none;
+    padding-top: 45px; 
+    background: transparent;
+}
+
+.navbar-nav .active {
+    color: #0b91b8;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 0.5em;
+}
+
+.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+.navbar-toggler:active {
+    border: none;
+}
+
+.btn {
+    background-color: #0b91b8;
+    border-style: none;
+    height: 3em;
+    margin-left: 3em;
+    font-weight: bold;
+}
+
+.btn-floating {
+    background-color: transparent;
+    size: 16px;
+}
+
+.btn-floating:hover {
+    color: white;
+}
+
+.text-capitalize {
+    font-weight: bold;
+}
+
+.text-white {
+    text-decoration: none;
+    align-items: left;
+}
+
+.logo-section{
+    padding-right: 6.5em;
+}
+
+.underline {
+    width: 10%;
+    height: 1em;
+    color: white;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.fa-brands {
+    padding-top: 0.8em;
+    font-size: 16px;
+}
+
+li.borderless {
+    border: 0 none;
+    font-size: 16px;
+    padding: 0.5em;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: white;
+    justify-content: left;
+}
+
+.fa-circle, .fa-phone-volume, .fa-envelope, .fa-globe, .fa-location-dot,
+.fa-database, .fa-code, .fa-cloud, .fa-shield, .fa-city, 
+.fa-circle-info, .fa-screwdriver-wrench, .fa-circle-info, .fa-code-branch, .fa-user-astronaut {
+    padding: 0.3em;
+}
+
+.motto {
+    padding-top: 1em;
+    padding-bottom: 4em;
+    font-size: 16px;
+}
+
+.copyright {
+    padding: 0.5em;
+    font-size: 16px;
+}
+
+.fa-magnifying-glass {
+    padding-top: 0.55em;
+    color: #0b91b8;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .nofixed {
+        width: 100%;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        color: transparent;
+        right: 15px;
+    }
+    
+    .navbar-toggler:active {
+        border: none;
+    }
+
+    .navbar-brand{
+        margin-left: -4.5em;
+        margin-top: 0.8em;
+    }
+
+    .list-group {
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    .footer-tab {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-col {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .mb-4 {
+        width: 100%;
+    }
+}
